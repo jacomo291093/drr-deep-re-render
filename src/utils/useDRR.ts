@@ -1,11 +1,14 @@
 import { useState, useRef, useEffect } from "react";
-import _ from "lodash";
+import isEqual from "lodash.isequal";
 
-const useDRR = (dependencyItem: any) => {
-  const [triggerRender, setTriggerRender] = useState(0);
-  const dependencyItemRef = useRef<any>(dependencyItem);
+type DependencyItem = unknown;
+type ReRenderTrigger = number;
+
+const useDRR = (dependencyItem: DependencyItem): ReRenderTrigger => {
+  const [triggerRender, setTriggerRender] = useState<ReRenderTrigger>(0);
+  const dependencyItemRef = useRef<DependencyItem>(dependencyItem);
   useEffect(() => {
-    if (_.isEqual(dependencyItem, dependencyItemRef.current)) return;
+    if (isEqual(dependencyItem, dependencyItemRef.current)) return;
     dependencyItemRef.current = dependencyItem;
     setTriggerRender((t) => t + 1);
   });

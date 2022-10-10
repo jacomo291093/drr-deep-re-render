@@ -10,7 +10,7 @@ const useEffectTestNoDrr = (form: any) => {
 const useEffectTestWithDrr = (form: any) => {
   useEffect(() => {
     console.log("CHANGED DRR!");
-  }, [useDRR(form)]);
+  }, []);
 };
 
 const useMemoTestNoDrr = (form: any) => {

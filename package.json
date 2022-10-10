@@ -1,7 +1,6 @@
 {
-  "name": "deep-re-render",
-  "private": true,
-  "version": "0.0.1",
+  "name": "@drr/deep-re-render",
+  "version": "0.0.0-semantically-released",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -11,7 +10,7 @@
   "dependencies": {
     "@types/lodash": "^4.14.186",
     "localforage": "^1.10.0",
-    "lodash": "^4.17.21",
+    "lodash.isequal": "^4.5.0",
     "match-sorter": "^6.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
