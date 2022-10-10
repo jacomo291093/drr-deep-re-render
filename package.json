@@ -1,6 +1,6 @@
 {
   "name": "deep-re-render",
-  "version": "0.0.0-semantically-released",
+  "version": "0.0.1-semantically-released",
   "description": "A react hook to be used in dependency array's to achieve deep compare re-renders",
   "main": "src/index.ts",
   "scripts": {
