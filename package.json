@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@types/lodash": "^4.14.186",
+    "deep-re-render": "^0.0.0-semantically-released",
     "localforage": "^1.10.0",
     "lodash.isequal": "^4.5.0",
     "match-sorter": "^6.3.1",
