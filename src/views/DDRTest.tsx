@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef, useMemo } from "react";
-import useDRR from "deep-re-render";
+import useDRR from "../utils/useDRR";
 const useEffectTestNoDrr = (form: any) => {
   useEffect(() => {
     console.log("CHANGED NO-DRR!");
